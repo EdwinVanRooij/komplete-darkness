@@ -1,5 +1,4 @@
 from core.const import DEVICE_CONFIG_MAP
-from core.file_engine import FileEngine
 
 
 class CommunicationEngine:
@@ -16,12 +15,23 @@ class CommunicationEngine:
         exit(-1)
 
     @staticmethod
-    def greet():
+    def greet_setup():
         print("Welcome to setup!")
 
     @staticmethod
-    def success():
+    def greet_main():
+        print("Welcome to KompleteDarkness!")
+
+    @staticmethod
+    def success_setup():
         print("Setup was successful! You may now run the main program.")
+        input("Press enter to quit...")
+
+    @staticmethod
+    def success_main():
+        print("Main was successful! The lights should be off. If they're not, please submit an issue at "
+              "https://github.com/EdwinVanRooij/komplete-darkness/issues.")
+        input("Press enter to quit...")
 
     @staticmethod
     def get_device_name():

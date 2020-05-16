@@ -7,7 +7,7 @@ from core.keyboard_engine import KeyboardEngine
 def main():
     """Main program flow."""
     print("Starting...")
-    CommunicationEngine.greet()
+    CommunicationEngine.greet_main()
 
     config = None
     try:
@@ -19,7 +19,7 @@ def main():
     keyboard_engine.start()
 
     keyboard_engine.turn_off()
-    print("Turned lights off, end of program.")
+    CommunicationEngine.success_main()
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ from core.settings_engine import SettingsEngine, DEVICE_CONFIG_MAP
 def setup():
     """Main setup program flow."""
     # Greet the user.
-    CommunicationEngine.greet()
+    CommunicationEngine.greet_setup()
 
     # Make the user choose their device name.
     device_name = CommunicationEngine.get_device_name()
@@ -18,9 +18,7 @@ def setup():
     SettingsEngine.write_config(config)
 
     # All went well, quit the program.
-    CommunicationEngine.success()
-    input("Press enter to quit...")
-    exit(0)
+    CommunicationEngine.success_setup()
 
 
 if __name__ == "__main__":

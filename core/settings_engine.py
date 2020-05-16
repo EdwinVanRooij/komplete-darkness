@@ -1,10 +1,7 @@
 import json
-
-from core.classes import Config
-from core.const import *
-
-import os.path
 from os import path
+
+from core.const import *
 
 
 class SettingsEngine:

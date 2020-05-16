@@ -39,8 +39,7 @@ class KeyboardEngine:
 
         # Open the keyboard device interface
         self.device = hid.device()
-        self.device.open(0x17cc, 0x1620)
-        # self.device.open(self.config.instrument_code, self.config.instrument_address)
+        self.device.open(self.config.instrument_code, self.config.instrument_address)
 
         # Initiate / activate the interface.
         self.device.write(key_initiate)
