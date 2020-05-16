@@ -2,6 +2,8 @@
 
 Use this program to turn off the Light Guide on your Komplete Kontrol device.
 
+Click the image below to see the demo video.
+
 [![KompleteDarkness](https://img.youtube.com/vi/kYX7PS1GVQs/0.jpg)](https://youtu.be/kYX7PS1GVQs)
 
 This is a side project to my other project, which already had this functionality built-in.
