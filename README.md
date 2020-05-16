@@ -1,5 +1,6 @@
 # KompleteDarkness
-Use this program to turn off the Light Guido on your Komplete Kontrol device.
+
+Use this program to turn off the Light Guide on your Komplete Kontrol device.
 
 [![KompleteDarkness](https://img.youtube.com/vi/R143-vSd6Eg/0.jpg)](https://www.youtube.com/watch?v=R143-vSd6Eg)
 
