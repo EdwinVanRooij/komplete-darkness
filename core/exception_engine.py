@@ -1,6 +1,8 @@
 import sys
 import traceback
 
+from core.communication_engine import CommunicationEngine
+
 
 class ExceptionEngine:
 
@@ -24,8 +26,7 @@ class ExceptionEngine:
                 function = trace[3]
                 stack_trace += f"{filepath}:{line} {type}.{function}\n"
 
-            print(f"Unexpected error occurred.\n"
-                  f"Error: {ex_type}\n"
-                  f"Message: {ex_value}\n"
-                  f"Trace: {stack_trace}\n")
-            quit(-1)
+            CommunicationEngine.quit(f"Unexpected error occurred.\n"
+                                     f"Error: {ex_type}\n"
+                                     f"Message: {ex_value}\n"
+                                     f"Trace: {stack_trace}\n")

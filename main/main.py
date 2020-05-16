@@ -1,10 +1,17 @@
+from core.communication_engine import CommunicationEngine
 from core.exception_engine import ExceptionEngine
+from core.settings_engine import SettingsEngine, CONFIG_FILEPATH
 
 
 def main():
     """Main program flow."""
     print("Starting...")
-    raise IndexError("Some index thing")
+    CommunicationEngine.greet()
+
+    try:
+        config = SettingsEngine.get_config(CONFIG_FILEPATH)
+    except FileNotFoundError:
+        CommunicationEngine.quit("Settings file not found. Make sure to run the setup first!")
 
 
 if __name__ == "__main__":
