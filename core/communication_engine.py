@@ -1,3 +1,4 @@
+from core.const import DEVICE_CONFIG_MAP
 from core.file_engine import FileEngine
 
 
@@ -24,21 +25,13 @@ class CommunicationEngine:
 
     @staticmethod
     def get_device_name():
-        names = [
-            "Komplete Kontrol S61 MK2",
-            "Komplete Kontrol S88 MK2",
-            "Komplete Kontrol S49 MK2",
-            "Komplete Kontrol S61 MK1",
-            "Komplete Kontrol S88 MK1",
-            "Komplete Kontrol S49 MK1",
-            "Komplete Kontrol S25 MK1",
-        ]
+        names = list(DEVICE_CONFIG_MAP.keys())
 
         print("Which Native Instruments file will you use? Pick a number and press enter.")
         return CommunicationEngine.get_answer_from_string_options(names)
 
     @staticmethod
-    def get_answer_from_string_options(strings, ):
+    def get_answer_from_string_options(strings):
         CommunicationEngine.print_options(strings)
 
         keyboard = input(">")

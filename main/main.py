@@ -9,7 +9,7 @@ def main():
     CommunicationEngine.greet()
 
     try:
-        config = SettingsEngine.get_config(CONFIG_FILEPATH)
+        config = SettingsEngine.get_config()
     except FileNotFoundError:
         CommunicationEngine.quit("Settings file not found. Make sure to run the setup first!")
 

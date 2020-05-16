@@ -1,6 +1,6 @@
 from core.communication_engine import CommunicationEngine
 from core.exception_engine import ExceptionEngine
-from core.settings_engine import SettingsEngine
+from core.settings_engine import SettingsEngine, DEVICE_CONFIG_MAP
 
 
 def setup():
@@ -12,7 +12,7 @@ def setup():
     device_name = CommunicationEngine.get_device_name()
 
     # Retrieve the config settings for that specific device.
-    config = SettingsEngine.get_config_by_device_name(device_name)
+    config = DEVICE_CONFIG_MAP[device_name]
 
     # Write those config settings to a file.
     SettingsEngine.write_config(config)
