@@ -1,6 +1,7 @@
 from core.communication_engine import CommunicationEngine
 from core.exception_engine import ExceptionEngine
-from core.settings_engine import SettingsEngine, CONFIG_FILEPATH
+from core.settings_engine import SettingsEngine
+from core.keyboard_engine import KeyboardEngine
 
 
 def main():
@@ -8,10 +9,17 @@ def main():
     print("Starting...")
     CommunicationEngine.greet()
 
+    config = None
     try:
         config = SettingsEngine.get_config()
     except FileNotFoundError:
-        CommunicationEngine.quit("Settings file not found. Make sure to run the setup first!")
+        CommunicationEngine.quit("Config file not found. Make sure to run the setup first!")
+
+    keyboard_engine = KeyboardEngine(config)
+    keyboard_engine.start()
+
+    keyboard_engine.turn_off()
+    print("Turned lights off, end of program.")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 {
-    "mode": "MK1",
+    "mode": "MK2",
     "instrument_code": 6092,
-    "instrument_address": 4960,
+    "instrument_address": 5664,
     "number_of_keys": 61,
     "offset": -36
 }

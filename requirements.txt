@@ -1,0 +1,5 @@
+# Komplete Kontrol libs
+hidapi
+
+# Build libs
+cx_Freeze
