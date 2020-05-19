@@ -11,19 +11,13 @@ By creating a seperate project for it, everyone who may find it useful is able t
 
 # Install
 
-## Pre-requisites
-
-...
-  
-## SynthesiaKontrol
-
-### Windows
+## Windows
 
 - Download the Windows package locally on your PC from [releases](https://github.com/EdwinVanRooij/komplete-darkness/releases/)
 - Extract in a new folder
 - Follow the instructions in the file `README.txt`
 
-### Linux, MAC
+## Linux, MAC
 
 Currently, this program is not compiled nor tested to work for Linux or MAC devices.
 Feel free to create a pull request to support any of these operating systems.
