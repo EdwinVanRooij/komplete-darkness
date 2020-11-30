@@ -2,6 +2,8 @@
 
 Use this program to turn off the Light Guide on your Komplete Kontrol device.
 
+**NOTE: this does more than turn off the Light Guide. It also disables the functionality of the Browser/MIDI/Instance buttons. [link](https://www.native-instruments.com/forum/threads/turn-off-light-guide-on-kontrol-mk2-49.325777/page-4)**
+
 Click the image below to see the demo video.
 
 [![KompleteDarkness](https://img.youtube.com/vi/kYX7PS1GVQs/0.jpg)](https://youtu.be/kYX7PS1GVQs)
